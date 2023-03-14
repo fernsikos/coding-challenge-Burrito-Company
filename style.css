@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+.d-none {
+   display: none !important;
+}
+
+header {
+    height: 250px;
+    width: 100%;
+    background-image: url('img/mexican-flag-3001452_1280.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(42, 42, 42);
+    background-color: rgba(128, 128, 128, 0.594);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.main-container {
+display: flex;
+}
+
+.menu-main-container {
+width: calc(100vw - 300px);
+min-height: calc(100vh - 250px);
+background-color: rgba(0, 64, 255, 0.089);
+padding-left: 24px;
+padding-right: 24px;
+}
+
+.menu-item {
+    padding: 12px;
+    display: flex;
+    margin-bottom: 12px;
+    background-color: rgba(183, 183, 183, 0.245);
+    border-radius: 10px;
+}
+
+.item-description {
+    margin-left: 24px;
+}
+
+.menu-item img {
+    height: 200px;
+    width: 220px;
+}
+
+.add-button img {
+    height: 24px;
+    width: 24px;
+}
+
+.add-button img:hover {
+    cursor: pointer;
+}
+
+.basket-main-container {
+    width: 300px;
+    min-height: calc(100vh - 250px);
+    background-color: rgba(0, 128, 0, 0.288);
+    position: static;
+}
+
+.basket-main-container h2 {
+    text-align: center;
+    border-bottom: 1px solid rgb(145, 145, 145);
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#basket-items {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 12px;
+}
+
+.item .quantity {
+    margin-left: 12px;
+    width: 24px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 88px;
+}
+
+.item .data .price .button-container {
+   display: flex;
+   align-items: center;
+}
+
+.item .data .price .button-container img{
+    height: 14px;
+    width: 14px;
+    margin-right: 6px;
+}
+
+.item .data .price .button-container img:hover {
+    cursor: pointer;
+}
+
+.sum-container {
+    border-top: 1px solid rgb(145, 145, 145);
+    padding-top: 12px;
+}
+
+.sum-container h3 {
+    display: flex;
+}
+
+button {
+    margin-left: 12px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(183, 183, 183, 0.823);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.message {
+    font-size: 30px;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    height: 260px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back-btn {
+    margin-top: 24px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="models/basket.class.js"></script>
+    <script src="models/menu.class.js"></script>
+    <script src="models/item.class.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Burrito Company</title>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>Burrito Company</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="menu-main-container">
+            <h2>Burrito Menü</h2>
+            <div class="menu-item-container" id="menu-item-container">
+            </div>
+        </div>
+        <div class="basket-main-container">
+            <h2>Warenkorb</h2>
+            <div id="basket-items">
+            </div>
+            <div class="sum-container">
+                <form action="">
+                    <input type="radio" id="discount-percent" name="discount" value="15%" onchange="renderSum()">
+                    <label for="discount-percent">15% Rabatt</label>
+                    <input type="radio" id="discount-fix" name="discount" value="2€" onchange="renderSum()">
+                    <label for="discount-fix">2€</label>
+                    <input type="radio" id="discount-none" name="discount" value="0" checked onchange="renderSum()">
+                    <label for="discount-none">kein Rabatt</label>
+                </form>
+                <h3>Summe: <div id="summe"></div>€</h3>
+            </div>
+            <button id="order-btn" onclick="oder()" disabled="true">Bestellen</button>
+        </div>
+    </div>
+
+    <div class="overlay d-none" id="overlay">
+        <div class="message">
+            Danke für Ihre bestellung!
+            <button class="back-btn" onclick="goBack()">Back</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
