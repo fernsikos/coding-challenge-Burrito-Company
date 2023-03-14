@@ -15,7 +15,7 @@ class Basket {
         } else if(document.getElementById('discount-fix').checked && this.basketItems.length > 0) {
             return (sum - 2)
         } else {
-            return (sum * 0.75)
+            return (sum * 0.85)
         }
     }
 }

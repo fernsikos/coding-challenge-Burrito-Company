@@ -1,5 +1,5 @@
-let basket = new Basket;
-let menu = new Menu;
+let basket = new Basket();
+let menu = new Menu();
 let sum;
 
 function init() {
